@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(247, 210, 90);
+}
+
+.smiley {
+    display: inline-block;
+
+}
+
+h3 {
+    display: inline;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+table, td {
+    border: 1px solid black;
+  }
+
+.cell {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.shown {
+    background-color: rgb(224, 191, 80);
+}
+
+.mine img {
+    width: 23px;
+    height: 23px;
+}
+
+.flag img {
+    width: 23px;
+    height: 23px;
+}

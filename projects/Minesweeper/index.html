@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body onload="initGame()">
+    <header>
+        <h3 class="mines">
+            Mines: <span>0</span>
+        </h3>
+        <div class="smiley" onclick="initGame()">
+        </div>
+        <h3 class="time">
+            Time: <span ></span>
+        </h3>
+        
+    </header>
+<!-- 
+    TODO: Hints
+    <div class="hint" onclick="getHint()"></div>
+    <div class="hint" onclick="getHint()"></div>
+    <div class="hint" onclick="getHint()"></div> -->
+
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <br>
+    <div class="buttons">
+        <button onclick="getLevel(this)">Beginner</button>
+        <button onclick="getLevel(this)">Medium</button>
+        <button onclick="getLevel(this)">Expert</button>
+    </div>
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>

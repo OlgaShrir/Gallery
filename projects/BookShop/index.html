@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+
+</head>
+
+<!-- look Tal's code -->
+
+
+<body onload="init()">
+    <h1>The New York Times Fiction Best Sellers of 2018</h1>
+    <button type="button" class="btn btn-primary" onclick="showAddBookModal()">Add New Book</button>
+    
+    <!-- modal add new book -->
+    <div class="modal add-book" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add New Book</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" onclick="$('.modal').hide()">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Enter new book details.
+                        <!-- title input -->
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Title</span>
+                            </div>
+                            <input type="text" class="form-control title" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <!-- autor input -->
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Autor</span>
+                            </div>
+                            <input type="text" class="form-control autor" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <!-- price input -->
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Price</span>
+                            </div>
+                            <input type="text" class="form-control price" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+                        <!-- image input -->
+                        <div class="input-group input-group-sm mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Image adress</span>
+                            </div>
+                            <input type="text" class="form-control image-adress" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                        </div>
+    
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="$('.modal').hide()">Close</button>
+                  <button type="button" class="btn btn-primary" onclick="onAddBook()">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- table -->
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Title</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Price</th>
+            <th scope="col">Image</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+
+    <!-- modal read book -->
+    <div class="modal read" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">PUT TITLE!!!! Book Name</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" onclick="$('.modal').hide()">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="about">About the Book</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="$('.modal').hide()">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="main-controller.js"></script>
+    <script src="service.js"></script>
+</body>
+</html>
