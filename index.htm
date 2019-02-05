@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Coding Academy</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/ca-gallery.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+
+</head>
+
+<body id="page-top" onload="init()">
+    <div class="offcanvas-btn" onClick="openCanvas()">
+        <i class="fa fa-comment" aria-hidden="true"></i>
+    </div>
+    <aside class="offcanvas-aside">
+
+        <!-- Contact -->
+        <section id="contact">
+            <h4>Contact Me</h4>
+
+                <!-- Name input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Name</label>
+                    <div class="col-md-9">
+                    <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
+                    </div>
+                </div>
+        
+                <!-- Subject input-->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="email">Subject</label>
+                    <div class="col-md-9">
+                    <input id="subject" name="email" type="text" placeholder="Your subject" class="form-control">
+                    </div>
+                </div>
+        
+                <!-- Message body -->
+                <div class="form-group">
+                    <label class="col-md-3 control-label" for="message">Your message</label>
+                    <div class="col-md-9">
+                    <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
+                    </div>
+                </div>
+        
+                <!-- Form actions -->
+                <div class="form-group">
+                    <div class="col-md-12 text-right">
+                    <button onclick="onSumbit()" type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </div>
+                <!-- #212121 -->
+        </section>
+    </aside>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Meet Me</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#services">Specialities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#me">Me</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#portfolio">Contact</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Welcome To my Portfolio</div>
+                <div class="intro-heading">It's Nice To Meet You</div>
+                <a class="btn btn-xl js-scroll-trigger" href="#services">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Specialities</h2>
+                    <h3 class="section-subheading text-muted">I can do the best of this.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fab fa-html5 fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">HTML</h4>
+                    <p class="text-muted">Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With CSS and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fab fa- fa-css3
+                        fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">CSS</h4>
+                    <p class="text-muted">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fab fa-js fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">JavaScript</h4>
+                    <p class="text-muted">JavaScript, often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Portfolio</h2>
+                    <h3 class="section-subheading text-muted">“A winner never stops trying.” —Tom Landry</h3>
+                </div>
+            </div>
+            <div class="row project">
+                <!-- here I render! -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Me -->
+    <section class="bg-light" id="me" style="padding: 0px;">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="img/me.jpg" alt="">
+                    <h4>Olga Shrir</h4>
+                    <p class="text-muted">Lead Leader</p>
+                    <ul class="list-inline social-buttons">
+                        
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/olga.shrir">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/in/olga-shrir-48a0b991/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-8 flex-align-center">
+                <p class="large text-muted  about-description">I try something new all the time and hope for the best.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 flex-align-center">
+                    <a href="http://coding-academy.org" target="_blank">
+                        <img src="./img/ca-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 flex-align-center">
+                    <ul class="list-inline social-buttons flex-align-center">
+                        <li class="list-inline-item flex-align-center">
+                            <a href="https://www.facebook.com/olga.shrir">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://il.linkedin.com/in/olga-shrir-48a0b991">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                            <div class="modal-body">
+                                <!-- here I render! -->                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/ca-gallery.js"></script>
+    <script src="js/offCanvas.js"></script>
+    <script src="js/gallery-service.js"></script>
+    <script src="js/gallery-controller.js"></script>
+
+
+</body>
+
+</html>
